@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ddd;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  border-bottom: 1px solid rgb(175, 175, 175);
+  background-color: white;
+  padding: 15px;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-brand a img {
+  display: block;
+  width: 40px;
+}
+
+.navbar .navbar-brand h3 {
+  font-size: 34px;
+  font-weight: 600;
+  color: gray;
+  padding-left: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  display: block;
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+  font-size: 18px;
+  padding: 16px 24px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    background-color: aliceblue;
+}
+
+.navbar .navbar-nav .nav-item .nav-link i {
+  padding-inline: 5px;
+}
+
+.navbar .group-icon {
+  font-size: 22px;
+}
+
+.navbar .group-icon i {
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.navbar .group-icon .fa-sun {
+  color: orange;
+  padding: 10px;
+  background-color: rgba(255, 166, 0, 0.185);
+  border-radius: 50%;
+}
+
+.navbar-nav .dropdown-menu{
+    position: relative;
+}
+
+.navbar-nav .dropdown{
+    position: absolute;
+    top: 90px;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.navbar-nav .dropdown-menu:hover .dropdown{
+    top: 80px;
+    visibility: visible;
+}
+
+.navbar-nav .nav-item .dropdown .navbar-nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-nav .nav-item .dropdown .navbar-nav .nav-item .nav-link {
+  background-color: white;
+  width: 240px;
+  padding: 12px 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-item .dropdown .navbar-nav .nav-item .nav-link:hover{
+    background-color: aliceblue;
+}
+
+.dropdown .navbar-nav .nav-item .nav-link .icon-arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown .sub-dropdown{
+    position: relative;
+}
+
+.dropdown .sub-dropdown {
+    position: absolute;
+    right: -240px;
+    top: 20px;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.dropdown .nav-item:hover .sub-dropdown{
+    top: 10px;
+    visibility: visible;
+}
+
+
+
+
+
